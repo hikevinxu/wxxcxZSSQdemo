@@ -1,0 +1,42 @@
+<view class="myFuLiCard">
+  <view class="tabTitle">
+    <view class="tabItem {{currentTab == 0 ? 'active' : ''}}" data-current="0" bindtap='switchTab'>全部</view>
+    <view class="tabItem {{currentTab == 1 ? 'active' : ''}}" data-current="1" bindtap='switchTab'>待结算</view>
+    <view class="tabItem {{currentTab == 2 ? 'active' : ''}}" data-current="2" bindtap='switchTab'>已结算</view>
+    <view class="tabItem {{currentTab == 3 ? 'active' : ''}}" data-current="3" bindtap='switchTab'>结算失败</view>
+  </view>
+  <swiper style="height: {{windowHeight}}px" class="tabContent" current="{{currentTab}}" duration="300" bindchange="switchSwiper" >
+    <swiper-item class="swiperItem">
+      <scroll-view scroll-y="true" class="scroll-h" wx:if="{{allData.length > 0}}">
+        11111111111
+      </scroll-view>
+      <view class="scroll-h" wx:else>
+        <image class="noData" src='../../images/noData.png'></image>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <scroll-view scroll-y="true" class="scroll-h" wx:if="{{pendingData.length > 0}}">
+        22222222222
+      </scroll-view>
+      <view class="scroll-h" wx:else>
+        <image class="noData" src='../../images/noData.png'></image>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <scroll-view scroll-y="true" class="scroll-h" wx:if="{{settledData.length > 0}}">
+        333333333333
+      </scroll-view>
+      <view class="scroll-h" wx:else>
+        <image class="noData" src='../../images/noData.png'></image>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <scroll-view scroll-y="true" class="scroll-h" wx:if="{{billingFailureData.length > 0}}">
+        444444444444444444
+      </scroll-view>
+      <view class="scroll-h" wx:else>
+        <image class="noData" src='../../images/noData.png'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

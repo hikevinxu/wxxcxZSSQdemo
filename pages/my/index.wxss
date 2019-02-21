@@ -1,0 +1,146 @@
+.my{
+  background-color: #ccc;
+}
+.my .userInfo{
+  /* background-color: #ccc; */
+}
+.my .userInfo .userImage{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  background-color: #dd2219;
+}
+.my .userInfo .userImage .userIcon{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.my .userInfo .userImage .userName{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.my .userInfo .userElse{
+  display:flex;
+  overflow: hidden;
+  padding-bottom: 10rpx;
+  background-color: #dd2219;
+  border-radius: 0 0 50% 50%;
+}
+.my .userInfo .userElse .shangjin,
+.my .userInfo .userElse .jiangbei{
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+.my .userInfo .userElse .jiangbei .top{
+  border-right: 1px solid #ccc;
+}
+.my .userInfo .userElse .shangjin .top,
+.my .userInfo .userElse .jiangbei .top{
+  font-size: 18px;
+  color: darkorange;
+}
+.my .userInfo .userElse .shangjin .bottom,
+.my .userInfo .userElse .jiangbei .bottom{
+  font-size: 12px;
+  padding-top: 10rpx;
+}
+.my .userActivity{
+  height: 100rpx;
+  display: flex;
+}
+.my .userActivity .duihuanBtn{
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  margin: auto 0;
+}
+.my .userActivity .duihuanBtn .btn{
+  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.my .userActivity .duihuanGz{
+  flex: 1;
+  font-size: 10px;
+  margin: auto 0
+}
+.middleMenu{
+  display: flex;
+  background-color: #fff;
+}
+.middleMenu .menuItem{
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  padding: 20rpx 0;
+  position: relative;
+}
+.middleMenu .itemBorder{
+  height: 40rpx;
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -20rpx;
+}
+.middleMenu .participateCJ{
+  border: 0;
+}
+.middleMenu .menuItem .top{
+  font-size: 18px;
+}
+.middleMenu .menuItem .bottom{
+  color: #333;
+}
+.my .menuList{
+  margin-top: 10rpx;
+  background-color: #fff;
+}
+.my .menuList .menuListItem{
+  display: flex;
+  height: 100rpx;
+}
+.my .menuList .menuListItem .menuImage{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx 20rpx;
+}
+button::after {
+  border: none;
+}
+.my .menuList .menuListItem .menuText{
+  display: flex;
+  flex: 1;
+  font-size: 15px;
+  line-height: 100rpx;
+  margin-right: 20px;
+  color: #333;
+  border: none;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+}
+.my .menuList .menuListItem .menuText .menuTextLeft{
+  flex: 1;
+}
+.my .menuList .menuListItem .menuRight{
+  width: 15rpx;
+  height: 30rpx;
+  margin: 35rpx 0;
+}
+.my .menuList .menuListItem:last-child .menuText{
+  border: 0;
+}

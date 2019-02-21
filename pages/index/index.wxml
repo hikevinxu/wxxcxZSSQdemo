@@ -1,0 +1,49 @@
+<view class="intro">
+    <swiper
+      indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item">
+            <image class="swiperImg" mode='widthFix' src="{{item}}" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="stack" bindtap="onTap">
+      <image class="stackIcon" src="../../images/stack2.png"></image>
+      <rich-text class="stackTitle" nodes="私人电台" bindtap="tap"></rich-text>
+      <image class="arrow" src="../../images/next.png"></image>
+    </view>
+    <view class="hotBook">
+      <view class="stack">
+        <image class="stackIcon" src="../../images/crown.png"></image>
+        <rich-text class="stackTitle" nodes="精品推荐" bindtap="tap"></rich-text>
+        <image class="arrow" src="../../images/next.png"></image>
+      </view> 
+      <view class="bookList">
+        <block wx:for="{{bookList}}" wx:key="*this">
+          <view class="bookItem">
+            <image class="bookCover" src="{{item.bookCover}}"></image>
+            <text class="bookName">{{item.bookName}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="hotBook">
+      <view class="stack">
+        <image class="stackIcon" src="../../images/hot.png"></image>
+        <rich-text class="stackTitle" nodes="火热连载" bindtap="tap"></rich-text>
+        <image class="arrow" src="../../images/next.png"></image>
+      </view> 
+      <view class="bookList">
+        <block wx:for="{{bookList}}" wx:key="*this">
+          <view class="bookItem">
+            <image class="bookCover" src="{{item.bookCover}}"></image>
+            <text class="bookName">{{item.bookName}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    
+</view>

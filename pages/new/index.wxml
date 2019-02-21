@@ -1,0 +1,20 @@
+<view class="new">
+  <block wx:for="{{dataArray}}" wx:key="*this">
+    <view class="bookItem">
+      <image class="bookImg" src="{{item.image}}"></image>
+      <view class="bookItemRight">
+        <text class="bookTitle">{{item.title}}</text>
+        <text class="bookAuthor">{{item.author[0]}} | {{item.publisher}}</text>
+        <text class="bookSummary">{{item.summary}}</text>
+        <text class="bookRate">评分：{{item.rating.average}}分 | {{item.rating.numRaters}}人在追</text>
+      </view>
+    </view>
+  </block>
+  <view class="loadMore">
+    <view class="loading" hidden="{{!searchLoading}}">
+    <image class="loadIcon" src="../../images/loading.gif"></image>
+    正在载入更多...
+    </view>
+    <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>
+  </view>
+</view>

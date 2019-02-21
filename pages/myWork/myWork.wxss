@@ -1,0 +1,22 @@
+.myWork .tabTitle{
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  white-space: nowrap;
+}
+.myWork .tabTitle .tabItem{
+  margin: 0 20rpx;
+  display: inline-block;
+  width: 14.5%;
+  text-align: center;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.tabItem.active{
+  color: #dd2219;
+  display: block;
+  border-bottom: 3px solid #dd2219;
+}

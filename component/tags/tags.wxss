@@ -1,0 +1,11 @@
+.tag{
+  float:left;
+  height: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  line-height: 40rpx;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  padding: 5rpx 15rpx;
+}

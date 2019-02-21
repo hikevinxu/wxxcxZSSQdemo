@@ -1,0 +1,67 @@
+.intro{
+  background-color: #f6f6f6;
+}
+.intro .swiper-item{
+  display: block;
+}
+.intro .swiper-item .swiperImg {
+  display: block; 
+  width: 100%;
+  height: auto;
+}
+.intro .stack{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #f6f6f6;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+}
+.intro .stack .stackIcon{
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+.intro .stackTitle{
+  float: left;
+  margin-left: 10rpx;
+  line-height: 80rpx;
+  font-size: 16px;
+}
+.intro .arrow {
+  float: right;
+  width: 20rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.intro .bookList {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+.intro .bookItem{
+  width: 26%;
+}
+.intro .bookItem .bookCover{
+  width: 100%;
+  height: 280rpx;
+}
+.intro .bookItem .bookName{
+  display: block;
+  text-align:center;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.intro .hotBook .stack{
+  margin-bottom: 0;
+}

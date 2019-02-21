@@ -1,0 +1,96 @@
+<view class="my">
+  <!-- <navigator url="/pages/new/index?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator> -->
+  <view class="userInfo">
+    <view class="userImage">
+      <open-data class="userIcon" type="userAvatarUrl"></open-data>
+      <open-data class="userName" type="userNickName"></open-data>
+    </view>
+    <view class="userElse">
+      <view class="jiangbei">
+        <view class="top"> <text>0</text> </view>
+        <view class="bottom"> <text>奖杯</text> </view> 
+      </view>
+      <view class="shangjin">
+        <view class="top"> <text>0.96元</text> </view>
+        <view class="bottom"> <text>零钱</text> </view> 
+      </view>
+    </view>
+    <view class="userActivity">
+      <view class="duihuanBtn"> <view class="btn">兑换零钱</view> </view>
+      <text class="duihuanGz">兑换比例：1000奖杯=1元</text>
+    </view>
+  </view>
+  <view class="middleMenu">
+    <view class="menuItem">
+      <view class="creatTZ">
+        <view class="top"> <text>0</text> </view>
+        <view class="bottom"> <text>创建的挑战</text> </view>
+      </view>
+      <view class="itemBorder"></view>
+    </view>
+    <view class="menuItem">
+      <view class="participateTZ">
+        <view class="top"> <text>6</text> </view>
+        <view class="bottom"> <text>参与的挑战</text> </view>
+      </view>
+      <view class="itemBorder"></view>
+    </view>
+    <view class="menuItem">
+      <view class="participateCJ">
+        <view class="top"> <text>0</text> </view>
+        <view class="bottom"> <text>参与的抽奖</text> </view>
+      </view>
+    </view>
+  </view>
+  <view class="menuList">
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/share.png"></image>
+      <button open-type="share" class="menuText">
+        <view class="menuTextLeft"> 分享与保存 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </button>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/member.png"></image>
+      <view class="menuText" >
+        <view class="menuTextLeft"> 我的主页 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/about.png"></image>
+      <view class="menuText" bindtap='showMyWork'>
+        <view class="menuTextLeft"> 任务 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/invitation.png"></image>
+      <view class="menuText"  bindtap='showMyFuLiCard'>
+        <view class="menuTextLeft"> 我的福利卡 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/wallet.png"></image>
+      <view class="menuText">
+        <view class="menuTextLeft"> 阅读书单 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/help.png"></image>
+      <view class="menuText">
+        <view class="menuTextLeft"> 帮助与反馈 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+    <view class="menuListItem">
+      <image class="menuImage" src="../../images/set.png"></image>
+      <view class="menuText">
+        <view class="menuTextLeft"> 设置 </view>
+        <image class="menuRight" src="../../images/next.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

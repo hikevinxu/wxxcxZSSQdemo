@@ -1,0 +1,14 @@
+<view class="intro">
+  <view class="mapBtn">
+    <view class="btn getAddress" bindtap='getLocation'>wx.getLocation</view>
+    <view class="btn openMap" bindtap='openLocation'>wx.openLocation</view>
+    <view class="btn chooseAddress" bindtap='chooseLocation'>wx.chooseLocation</view>
+  </view>
+  <view class="mapInfo">
+    <view>经度： {{longitude}}</view>
+    <view>纬度： {{latitude}}</view>
+    <view>选择后的地址： {{chooseAddress}}</view>
+    <view>选择后的经度： {{chooseLongitude}}</view>
+    <view>选择后的纬度： {{chooseLatitude}}</view>
+  </view>
+</view> 

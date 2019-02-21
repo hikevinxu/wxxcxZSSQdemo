@@ -1,0 +1,42 @@
+<view class="myWork">
+  <scroll-view
+    class="tabTitle"
+    scroll-x="true"
+    scroll-left="{{scrollLeft}}"
+  >
+    <view class="tabItem {{currentTab == 0 ? 'active' : ''}}" data-current="0" bindtap='switchNav'>首页1</view>
+    <view class="tabItem {{currentTab == 1 ? 'active' : ''}}" data-current="1" bindtap='switchNav'>首页2</view>
+    <view class="tabItem {{currentTab == 2 ? 'active' : ''}}" data-current="2" bindtap='switchNav'>首页3</view>
+    <view class="tabItem {{currentTab == 3 ? 'active' : ''}}" data-current="3" bindtap='switchNav'>首页4</view>
+    <view class="tabItem {{currentTab == 4 ? 'active' : ''}}" data-current="4" bindtap='switchNav'>首页5</view>
+    <view class="tabItem {{currentTab == 5 ? 'active' : ''}}" data-current="5" bindtap='switchNav'>首页6</view>
+    <view class="tabItem {{currentTab == 6 ? 'active' : ''}}" data-current="6" bindtap='switchNav'>首页7</view>
+    <view class="tabItem {{currentTab == 7 ? 'active' : ''}}" data-current="7" bindtap='switchNav'>首页8</view>
+  </scroll-view>
+  <swiper class="tabContent" current="{{currentTab}}" duration="300" bindchange="switchTab" >
+    <swiper-item>
+      1111
+    </swiper-item>
+    <swiper-item>
+      2222
+    </swiper-item>
+    <swiper-item>
+      3333
+    </swiper-item>
+    <swiper-item>
+      4444
+    </swiper-item>
+     <swiper-item>
+      5555
+    </swiper-item>
+    <swiper-item>
+      6666
+    </swiper-item>
+    <swiper-item>
+      7777
+    </swiper-item>
+    <swiper-item>
+      8888
+    </swiper-item>
+  </swiper>
+</view>
